@@ -1,0 +1,150 @@
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: Cairo, Arial;
+  user-select: none;
+}
+
+body {
+  background-color: black;
+}
+
+button {
+  color: white;
+  font-size: 24px;
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: transparent;
+  transition: all 0.8s;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border-color: white;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+div {
+  overflow: hidden;
+}
+
+.v-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 6px);
+}
+
+.header,
+.footer {
+  display: flex;
+  flex: 2;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0 20px;
+}
+
+.footer button {
+  flex: 1;
+}
+
+.header {
+  font-size: 32px;
+}
+
+.main {
+  flex: 10;
+  display: flex;
+}
+
+.player-box {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.score,
+.history {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.lose {
+  opacity: 0.6;
+}
+
+.score .row:first-child {
+  font-size: 42px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.h-line {
+  border: white 3px solid;
+  border-radius: 12px;
+}
+
+.player-name,
+input {
+  font-size: 32px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.interaction {
+  flex: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interaction img {
+  width: 70%;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  height: 32px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  line-height: 1;
+  max-width: 100%;
+  transition: all 0.6s;
+}
+
+input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+}

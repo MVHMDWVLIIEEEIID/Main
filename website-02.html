@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paper Rock & Scissors App</title>
+  <link rel="stylesheet" href="website-02.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="v-container">
+    <div class="header">
+      <p>MVHMD WVLIIEEEIID™</p>
+    </div>
+    <div class="main">
+      <div class="player-box">
+        <input class="player-name" value="Choose Your Name">
+        <div class="interaction" id="playerInteraction">
+          <img src="assets/Paper.png">
+        </div>
+      </div>
+      <div class="stats">
+        <div class="score">
+          <div class="row" id="score">
+            <p id="1" class="lose">0</p>-<p id="2" class="lose">0</p>
+          </div>
+          <div class="row">Score</div>
+        </div>
+        <div class="h-line"></div>
+        <div class="history" id="history">
+          <div class="row">
+            <p class="lose">Game</p>-<p class="lose">One</p>
+          </div>
+          <div class="row">
+            <p class="lose">Game</p>-<p class="lose">Two</p>
+          </div>
+          <div class="row">
+            <p class="lose">Game</p>-<p class="lose">Three</p>
+          </div>
+        </div>
+      </div>
+      <div class="player-box">
+        <div class="player-name">
+          MVHMD AI (0 IQ)
+        </div>
+        <div class="interaction" id="cpuInteraction">
+          <img src="assets/cpu-Paper.png">
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="69">
+      <button onclick="startGame()">Start</button>
+    </div>
+  </div>
+  <script src="website-02.js"></script>
+</body>
+
+</html>
